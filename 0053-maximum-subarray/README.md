@@ -1,5 +1,7 @@
 <h2><a href="https://leetcode.com/problems/maximum-subarray">53. Maximum Subarray</a></h2><h3>Medium</h3><hr><p>Given an integer array <code>nums</code>, find the <span data-keyword="subarray-nonempty">subarray</span> with the largest sum, and return <em>its sum</em>.</p>
 
+![image](https://github.com/user-attachments/assets/70a1e49b-1900-4957-8c82-b97b1e6a67a6)
+
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
