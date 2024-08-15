@@ -1,6 +1,6 @@
 <h2><a href="https://leetcode.com/problems/valid-palindrome">125. Valid Palindrome</a></h2>
 	<div align="center">
-		<img width="600" src="https://github.com/user-attachments/assets/e2de3423-fd44-462e-93b8-6660030ac1e5"/>
+		<img width="600" src="https://github.com/user-attachments/assets/fcd3b4fa-8f33-4e2c-83cb-ff74826fd6a1"/>
 	</div>
 <h3>Easy</h3><hr><p>A phrase is a <strong>palindrome</strong> if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.</p>
 
