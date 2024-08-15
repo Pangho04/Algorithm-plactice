@@ -1,4 +1,8 @@
-<h2><a href="https://leetcode.com/problems/valid-palindrome">125. Valid Palindrome</a></h2><h3>Easy</h3><hr><p>A phrase is a <strong>palindrome</strong> if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.</p>
+<h2><a href="https://leetcode.com/problems/valid-palindrome">125. Valid Palindrome</a></h2>
+	<div align="center">
+		<img width="600" src="https://github.com/user-attachments/assets/e2de3423-fd44-462e-93b8-6660030ac1e5"/>
+	</div>
+<h3>Easy</h3><hr><p>A phrase is a <strong>palindrome</strong> if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.</p>
 
 <p>Given a string <code>s</code>, return <code>true</code><em> if it is a <strong>palindrome</strong>, or </em><code>false</code><em> otherwise</em>.</p>
 
