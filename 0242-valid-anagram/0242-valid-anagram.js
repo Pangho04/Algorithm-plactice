@@ -4,19 +4,22 @@
  * @return {boolean}
  */
 var isAnagram = function (s, t) {
-  let sExeptT = s;
+  let chars = {}
 
-  if(s.length !== t.length){
+  if (s.length !== t.length) {
     return false;
   }
 
   for (let i = 0; i < t.length; i++) {
-      sExeptT = sExeptT.replace(t[i], "");
+    chars[s[i]] = (chars[s[i]] || 0) + 1;
+    chars[t[i]] = (chars[t[i]] || 0) - 1;
   }
 
-  if (sExeptT.length === 0) {
-    return true;
+  for (const char in chars) {
+    if (chars[char] !== 0) {
+      return false
+    }
   }
 
-  return false;
+  return true;
 };
