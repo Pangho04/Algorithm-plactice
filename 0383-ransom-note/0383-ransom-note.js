@@ -10,7 +10,6 @@ var canConstruct = function (ransomNote, magazine) {
     newRansom = newRansom.replace(magazine[i],"");
   }
 
-  console.log(newRansom)
   if(newRansom.length > 0){
     return false;
   }
