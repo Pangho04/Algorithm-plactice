@@ -1,34 +1,30 @@
 
-var Trie = function() {
-    this.trie = [];
+var Trie = function () {
+  this.trie = [];
 };
 
 /** 
  * @param {string} word
  * @return {void}
  */
-Trie.prototype.insert = function(word) {
-    if (this.trie.length > 0) {
-      this.trie = [ ...this.trie, word];
-    } else {
-      this.trie = [word];
-    }
+Trie.prototype.insert = function (word) {
+  this.trie.push(word);
 };
 
 /** 
  * @param {string} word
  * @return {boolean}
  */
-Trie.prototype.search = function(word) {
-    return this.trie.includes(word);
+Trie.prototype.search = function (word) {
+  return this.trie.includes(word);
 };
 
 /** 
  * @param {string} prefix
  * @return {boolean}
  */
-Trie.prototype.startsWith = function(prefix) {
-    return this.trie.some((word) => word.startsWith(prefix));
+Trie.prototype.startsWith = function (prefix) {
+  return this.trie.some((word) => word.startsWith(prefix));
 };
 
 /** 
