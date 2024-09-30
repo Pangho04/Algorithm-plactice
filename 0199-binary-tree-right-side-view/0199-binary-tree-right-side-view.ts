@@ -14,33 +14,23 @@
 
 function rightSideView(root: TreeNode | null): number[] {
   const result: number[] = [];
-  const postDepth: number[] = [-1];
+  let maxDepth: number = -1;
 
-  function getNodeStartRight(node, depth) {
+  function getNodeStartRight(node: TreeNode, depth: number): void {
     if(!node){
-      return null;
+      return;
     }
 
-    if (depth > postDepth[postDepth.length - 1]){
+    if (depth > maxDepth){
       result.push(node.val);
-      postDepth.push(depth);
+      maxDepth = depth;
     }
 
-    const rightSide = getNodeStartRight(node.right, depth + 1);
-    let leftSide = null;
-
-    if (rightSide === null) {
-      leftSide = getNodeStartRight(node.left, depth + 1);
-    }
-
-    if (!rightSide && !leftSide) {
-      return null;
-    }
+    getNodeStartRight(node.right, depth + 1);
+    getNodeStartRight(node.left, depth + 1);
   }
 
   getNodeStartRight(root, 0);
-
-  console.log(result);
 
   return result;
 };
