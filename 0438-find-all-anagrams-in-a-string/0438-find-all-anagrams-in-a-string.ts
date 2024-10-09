@@ -29,10 +29,6 @@ function findAnagrams(s: string, p: string): number[] {
 
       compareMap.set(s[left], compareMap.get(s[left]) - 1);
 
-      if(compareMap.get(s[left]) === 0) {
-        compareMap.delete(s[left]);
-      }
-
       left++;
     }
 
